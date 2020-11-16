@@ -1,0 +1,26 @@
+{
+  "name": "azure-serverless-tradingview",
+  "version": "0.0.1",
+  "description": "azure-serverless-tradingview uses Azure serverless functions to parse alerts from your Tradingview charts and place orders with Binance using thier REST api.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modster/azure-serverless-tradingview.git"
+  },
+  "author": {
+    "name": "Mike Greeff",
+    "email": "greeffer@gmail.com",
+    "url": "http://github.com/modster"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
