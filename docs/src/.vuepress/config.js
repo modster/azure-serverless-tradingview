@@ -1,14 +1,15 @@
 const { description } = require('../../package')
 
 module.exports = {
+  base: '/azure-serverless-tradingview/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Azure Serverless Tradingview Bot Docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: 'A trading bot that Azure serverless functions to parse alerts from your Tradingview charts and place orders with Binance using thier REST api.',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -62,6 +63,8 @@ module.exports = {
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+   * https://github.com/francoischalifour/medium-zoom#options
+   * https://medium-zoom.francoischalifour.com/
    */
   plugins: [
     '@vuepress/plugin-back-to-top',

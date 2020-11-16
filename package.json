@@ -13,7 +13,7 @@
   "author": {
     "name": "Mike Greeff",
     "email": "greeffer@gmail.com",
-    "url": "http://github.com/modster/azure-serverless-tradingview#readme"
+    "url": "https://github.com/modster/azure-serverless-tradingview#readme"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs/src",
@@ -21,6 +21,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3"
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
+    "vuepress": "^1.7.1"
   }
 }
