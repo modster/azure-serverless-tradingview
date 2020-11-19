@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.VUEPRESS_DEPLOY }}
         TARGET_REPO: modster/azure-serverless-tradingview
         TARGET_BRANCH: gh_pages
-        BUILD_SCRIPT: yarn && yarn build
+        BUILD_SCRIPT: npm docs:build
         BUILD_DIR: docs/.vuepress/dist/
