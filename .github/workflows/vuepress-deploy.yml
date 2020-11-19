@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: vuepress-deploy
-      uses: modster/azure-serverless-tradingview
+      uses: modster/azure-serverless-tradingview@master
       env:
         TARGET_REPO: modster/azure-serverless-tradingview
         TARGET_BRANCH: gh_pages
