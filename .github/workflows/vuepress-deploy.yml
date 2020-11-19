@@ -1,0 +1,17 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: modster/azure-serverless-tradingview
+      env:
+        ACCESS_TOKEN: ${{ secrets.VUEPRESS_DEPLOY }}
+        TARGET_REPO: modster/azure-serverless-tradingview
+        TARGET_BRANCH: gh_pages
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: docs/.vuepress/dist/
